@@ -5,6 +5,7 @@ export type UserDocument = HydratedDocument<User>;
 
 @Schema()
 export class User {
+
   @Prop()
   username: string;
 
@@ -50,3 +51,5 @@ export class User {
   @Prop()
   updated_at: Date;
 }
+
+export const UserSchema = SchemaFactory.createForClass(User);
