@@ -1,12 +1,3 @@
-// model Notice {
-//     id         Int      @id @default(autoincrement())
-//     content    String
-//     class      Class    @relation(fields: [class_id], references: [id])
-//     class_id   Int
-//     created_at DateTime @default(now())
-//     updated_at DateTime @default(now())
-//   }
-
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 

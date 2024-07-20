@@ -1,22 +1,3 @@
-// model User {
-//     id                Int            @id @default(autoincrement())
-//     username          String
-//     password_hash     String
-//     first_name        String
-//     last_name         String
-//     email             String         @unique
-//     profile_picture   String?
-//     role              Role
-//     messages_sent     Message[]
-//     messages_received Message[]      @relation("UserToMessages")
-//     submissions       Submission[]
-//     marks             Mark[]
-//     classesTaught     Class[]        @relation("TeacherClasses")
-//     student_classes   StudentClass[]
-//     created_at        DateTime       @default(now())
-//     updated_at        DateTime       @default(now())
-//   }
-
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 
